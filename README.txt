@@ -4,8 +4,7 @@ Required files:
 - index.html: responsive three-specimen study scaffold
 - styles.css: shared tokens, layout foundations, and TODO markers
 - study-notes.html: purposes, states, effects, tests, code defense, and AI disclosure
-- README.txt: replace this text with your project description and testing notes
-
+README.txt: Community workshop microinteraction study is showing the following: action, selection, and disclosure feedback. I tested with keyboard, pointer, reduced motion, 320px narrow width, 200% zoom, CSS disabled, and devtools Performance. My evidence screenshots are included in the evidence folder.
 Use:
 1. Extract the folder before editing.
 2. Keep the required filenames and relative paths.
