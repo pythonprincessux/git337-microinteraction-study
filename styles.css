@@ -73,8 +73,22 @@ body { margin:0; color:var(--ink); background:var(--surface); font:1rem/1.5 Aria
 }
 summary { cursor:pointer; font-weight:700; }
 .confirmation { margin-top:.75rem; padding:1rem; }
-/* TODO: apply at least three purposeful effects across the study. */
-/* TODO: create and trigger one short, finite keyframe animation. */
+
+@keyframes reveal-confirmation {
+  from {
+    opacity:0;
+    transform:translateY(-.25rem);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+details[open] .confirmation {
+  animation:reveal-confirmation .25s ease-out 1;
+}
+
 /* TODO: add a tested reduced-motion strategy that preserves all feedback. */
 footer { padding-block:2rem; }
 @media (min-width:48rem) {
