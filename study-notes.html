@@ -166,9 +166,15 @@
         a small lift or press movement that makes the interaction more clear.</p>
     <p><strong>Transition 2:</strong> The .action box-shadow transitions for about .15s during hover and active states,
         changing the control to reinforce the lift and pressed feedback.</p>
-    <p><strong>Keyframe animation:</strong> [Name, waypoints, trigger, iteration count, and purpose]</p>
-    <p><strong>Why these properties:</strong> [Connect choices to layout/paint/composition.]</p>
-    <p><strong>Reduced-motion alternative:</strong> [What is removed/replaced and how feedback remains.]</p>
+    <p><strong>Keyframe animation:</strong> The reveal confirmation animation changes the opacity from 0 to 1 and the
+        transform from translateY(-.25rem) to translateY(0). It runs once for .25s with ease out when the details
+        element opens, helping draw attention to the confirmation message for the user and for clarity.</p>
+    <p><strong>Why these properties:</strong> Transform and opacity give the page movement without changing the document
+        layout, while the box shadow changes the visual depth of the action control. These choices keep the motion
+        short, brief, and focused on interaction feedback.</p>
+    <p><strong>Reduced-motion alternative:</strong> When reduced motion is preferred, the action transition and
+        confirmation animation are not there anymore. Hover, focus, active, checked, and open states still give the page visible
+        feedback without movement.</p>
     <h2>5. Test record</h2>
     <table>
         <tr>
