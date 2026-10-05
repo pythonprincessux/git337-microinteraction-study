@@ -42,7 +42,8 @@ body { margin:0; color:var(--ink); background:var(--surface); font:1rem/1.5 Aria
 
 .action:hover {
   transform:translateY(-.1rem);
-  box-shadow:0 .35rem 0 #5f132b;
+  box-shadow:0 .35rem 0 0 #5f132b;
+  filter:brightness(1.08);
 }
 
 .action:focus-visible {
