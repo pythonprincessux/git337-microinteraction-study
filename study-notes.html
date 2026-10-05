@@ -227,16 +227,24 @@
                 testing.</td>
         </tr>
     </table>
-    <p><strong>Screenshot filenames and what each proves:</strong> [Response]</p>
+    <p><strong>Screenshot filenames and what each proves:</strong> narrow-200-percent.png shows the responsive layout is
+        still readable and usable at a 320px viewport and 200% zoom. focus-visible.png shows the visible keyboard focus
+        outline on the Review Registration action control.</p>
     <p><strong>Repair and retest summary:</strong> During review in the internal browser, the responsive width was
         corrected from min(100% - 2rem, var(--max)) to min(calc(100% - 2rem), var(--max)) so the subtraction is
         calculated. I retested the page at a 320px viewport and confirmed there was no horizontal overflow, cut off
         content, or readability problem.</p>
     <h2>6. AI disclosure</h2>
-    <p><strong>Tool and purpose, or none:</strong> [Response]</p>
-    <p><strong>Prompt/task:</strong> [Response]</p>
-    <p><strong>Accepted, changed, or rejected output:</strong> [Response]</p>
-    <p><strong>How I verified it with sources and tests:</strong> [Response]</p>
+    <p><strong>Tool and purpose, or none:</strong> For this week's assignment, I used ChatGPT to help plan the
+        interaction states, suggest CSS approaches, and organize my devtools browser testing. I decided the purpose,
+        explained every accepted declarations, verified my syntax and support with MDN documentation.</p>
+    <p><strong>Prompt/task/context:</strong> I asked for simple CSS approaches for the action, selection, and disclosure
+        specimens, including state feedback, special effects, motion, reduced motion support, and guidance for
+        completing the required tests.</p>
+    <p><strong>Accepted, changed, or rejected output:</strong> I reviewed the suggestions, adapted them to the starter
+        files and community workshop context, and used only the CSS and documentation that matched the assignment
+        requirements and my tested results.</p>
+<p><strong>How I verified it with sources and tests:</strong> I checked all of the CSS techniques with the MDN sources listed above and tested keyboard and pointer interaction, reduced motion, narrow width and 200% zoom, CSS unavailable behavior, and performance in devtools as instructe in Canvas.</p>
 </body>
 
 </html>
