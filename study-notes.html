@@ -173,7 +173,8 @@
         layout, while the box shadow changes the visual depth of the action control. These choices keep the motion
         short, brief, and focused on interaction feedback.</p>
     <p><strong>Reduced-motion alternative:</strong> When reduced motion is preferred, the action transition and
-        confirmation animation are not there anymore. Hover, focus, active, checked, and open states still give the page visible
+        confirmation animation are not there anymore. Hover, focus, active, checked, and open states still give the page
+        visible
         feedback without movement.</p>
     <h2>5. Test record</h2>
     <table>
@@ -184,37 +185,53 @@
         </tr>
         <tr>
             <td>Keyboard and focus</td>
-            <td>[Response]</td>
-            <td>[Response]</td>
+            <td>During my testing, the tab navigation reached the action control, radio choices, and disclosure control.
+                Focus outlines were
+                clearly visible, arrow keys changed the radio selection, and the space bar opened the disclosure.</td>
+            <td>Pass. Keyboard interaction and visible focus worked as expected with no repair needed so far.</td>
         </tr>
         <tr>
             <td>Pointer and no hover-only information</td>
-            <td>[Response]</td>
-            <td>[Response]</td>
+            <td>The action lifted and changed appearance on hover and apeared to move downward when pressed. Radio
+                selections and
+                the disclosure also worked with the pointer, and important information was still visible without
+                hovering.</td>
+            <td>Pass. Pointer feedback worked as intended, and no essential information depended on hover.</td>
         </tr>
         <tr>
             <td>Reduced motion</td>
-            <td>[Response]</td>
-            <td>[Response]</td>
+            <td>With prefers-reduced-motion set to reduce in dev tools, the action transition and confirmation reveal
+                animation were
+                removed. Focus, hover, active, checked, and open-state feedback were still available.</td>
+            <td>Pass. Removing motion did not remove any essential interaction feedback or information.</td>
         </tr>
         <tr>
             <td>Narrow width and 200% zoom</td>
-            <td>[Response]</td>
-            <td>[Response]</td>
+            <td>At a 320px viewport and at 200% zoom, the page is still readable and usable with no overlapping content
+                or horizontal page overflow.</td>
+            <td>Pass. The responsive layout adapted correctly in devtools testing and no repair was needed.</td>
         </tr>
         <tr>
             <td>Effects/CSS unavailable</td>
-            <td>[Response]</td>
-            <td>[Response]</td>
+            <td>With the stylesheet disabled in devtools, the headings, action link, radio controls, labels, disclosure,
+                and
+                confirmation content were still understandable and usable through native HTML.</td>
+            <td>Pass. Essential meaning and interaction did not depend on CSS.</td>
         </tr>
         <tr>
             <td>Performance recording</td>
-            <td>[Response]</td>
-            <td>[Response]</td>
+            <td>I ran a devtools performance recording and captured while interacting with the page that action, radio
+                selections, and disclosure. The recording showed a CLS of 0 and 19 passed insights with no
+                interaction performance problems.</td>
+            <td>Pass. The short transitions and animation did not produce an obvious performance issue during
+                testing.</td>
         </tr>
     </table>
     <p><strong>Screenshot filenames and what each proves:</strong> [Response]</p>
-    <p><strong>Repair and retest summary:</strong> [Response]</p>
+    <p><strong>Repair and retest summary:</strong> During review in the internal browser, the responsive width was
+        corrected from min(100% - 2rem, var(--max)) to min(calc(100% - 2rem), var(--max)) so the subtraction is
+        calculated. I retested the page at a 320px viewport and confirmed there was no horizontal overflow, cut off
+        content, or readability problem.</p>
     <h2>6. AI disclosure</h2>
     <p><strong>Tool and purpose, or none:</strong> [Response]</p>
     <p><strong>Prompt/task:</strong> [Response]</p>
