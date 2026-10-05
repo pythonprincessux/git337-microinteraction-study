@@ -17,9 +17,43 @@ body { margin:0; color:var(--ink); background:var(--surface); font:1rem/1.5 Aria
 .eyebrow, .specimen-number { color:var(--brand); font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
 .specimen-grid { display:grid; gap:var(--space); }
 .specimen { padding:1.25rem; background:var(--paper); border:1px solid #ccc; border-radius:.5rem; }
-.action { display:inline-block; padding:.75rem 1rem; /* TODO: default action surface. */ }
-.action::after { /* TODO: decorative pseudo-element with empty content. */ }
-/* TODO: action hover, focus-visible, and active states with explicit transitions. */
+.action {
+  display:inline-block;
+  padding:.75rem 1rem;
+  background:var(--brand);
+  color:var(--paper);
+  text-decoration:none;
+  border-radius:.5rem;
+  box-shadow:0 .25rem 0 #5f132b;
+  transition-property:transform, box-shadow;
+  transition-duration:.15s;
+}
+
+.action::after {
+  content:"";
+  display:inline-block;
+  width:.5rem;
+  height:.5rem;
+  margin-left:.5rem;
+  border-top:.15rem solid currentColor;
+  border-right:.15rem solid currentColor;
+  transform:rotate(45deg);
+}
+
+.action:hover {
+  transform:translateY(-.1rem);
+  box-shadow:0 .35rem 0 #5f132b;
+}
+
+.action:focus-visible {
+  outline:.2rem solid var(--focus);
+  outline-offset:.2rem;
+}
+
+.action:active {
+  transform:translateY(.15rem);
+  box-shadow:0 .1rem 0 #5f132b;
+}
 .choices { margin:0; padding:0; border:0; }
 .choice { display:grid; grid-template-columns:auto 1fr; gap:.75rem; align-items:start; margin-block:.75rem; }
 .choice input { width:1.25rem; height:1.25rem; margin-top:.25rem; }
