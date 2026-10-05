@@ -1,191 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Microinteraction Study Notes</title>
-        <style>
-            body {
-                max-width:78rem;
-                margin:auto;
-                padding:1rem;
-                font:1rem/1.5 Arial,sans-serif;
-            }
-            h1,h2 {color:#8c1d40;
-            }
-            table {
-                width:100%;
-                border-collapse:collapse;
-            }
-            th,td {
-                border:1px solid #999;
-                padding:.55rem;
-                text-align:left;
-                vertical-align:top;
-            }
-            th {
-                background:#8c1d40;
-                color:#fff;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Microinteraction Study Notes</h1>
-        <p><strong>Student:</strong> [Name] &nbsp; <strong>Study context:</strong> [Context]</p>
-        <h2>1. Purpose and semantic baseline</h2>
-        <table>
-            <tr>
-                <th>Specimen</th>
-                <th>User need / communication purpose</th>
-                <th>Native HTML used and why</th>
-                <th>What remains without CSS</th>
-            </tr>
-            <tr>
-                <td>Action</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Selection/status</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Disclosure/confirmation</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>            
-        </table>
-        <h2>2. State map</h2>
-        <table>
-            <tr>
-                <th>State</th>
-                <th>Specimen</th>
-                <th>Visual cue(s)</th>
-                <th>How it avoids color-only meaning</th>
-            </tr>
-            <tr>
-                <td>Default</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Hover</td>
-                <td>[Response]</td>                    
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Focus-visible</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Active</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Selected/checked</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Open and status/result</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-        </table>
-        <h2>3. Effects inventory</h2>
-        <table>                
-            <tr>
-                <th>Technique and selector</th>
-                <th>Communication purpose</th>
-                <th>Legibility/fallback check</th>
-                <th>MDN source</th>
-            </tr>
-            <tr>
-                <td>Pseudo-element</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[URL]</td>
-            </tr>
-            <tr>
-                <td>Effect 1</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[URL]</td>
-            </tr>
-            <tr>
-                <td>Effect 2</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[URL]</td>
-            </tr>
-            <tr>
-                <td>Effect 3</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-                <td>[URL]</td>
-            </tr>
-        </table>
-        <h2>4. Motion and CSS explanation</h2>
-        <p><strong>Transition 1:</strong> [Selector, trigger, explicit properties, duration/easing, and purpose]</p>
-        <p><strong>Transition 2:</strong> [Selector, trigger, explicit properties, duration/easing, and purpose]</p>
-        <p><strong>Keyframe animation:</strong> [Name, waypoints, trigger, iteration count, and purpose]</p>
-        <p><strong>Why these properties:</strong> [Connect choices to layout/paint/composition.]</p>
-        <p><strong>Reduced-motion alternative:</strong> [What is removed/replaced and how feedback remains.]</p>
-        <h2>5. Test record</h2>
-        <table>
-            <tr>
-                <th>Condition</th>
-                <th>Observed evidence</th>
-                <th>Result and repair</th>
-            </tr>
-            <tr>
-                <td>Keyboard and focus</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Pointer and no hover-only information</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Reduced motion</td>
-                <td>[Response]</td>                    
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Narrow width and 200% zoom</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Effects/CSS unavailable</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-            <tr>
-                <td>Performance recording</td>
-                <td>[Response]</td>
-                <td>[Response]</td>
-            </tr>
-        </table>
-        <p><strong>Screenshot filenames and what each proves:</strong> [Response]</p>
-        <p><strong>Repair and retest summary:</strong> [Response]</p>
-        <h2>6. AI disclosure</h2>
-        <p><strong>Tool and purpose, or none:</strong> [Response]</p>
-        <p><strong>Prompt/task:</strong> [Response]</p>
-        <p><strong>Accepted, changed, or rejected output:</strong> [Response]</p>
-        <p><strong>How I verified it with sources and tests:</strong> [Response]</p>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Microinteraction Study Notes</title>
+    <style>
+        body {
+            max-width: 78rem;
+            margin: auto;
+            padding: 1rem;
+            font: 1rem/1.5 Arial, sans-serif;
+        }
+
+        h1,
+        h2 {
+            color: #8c1d40;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: .55rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #8c1d40;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Microinteraction Study Notes</h1>
+    <p><strong>Student:</strong> [Name] &nbsp; <strong>Study context:</strong> [Context]</p>
+    <h2>1. Purpose and semantic baseline</h2>
+    <table>
+        <tr>
+            <th>Specimen</th>
+            <th>User need / communication purpose</th>
+            <th>Native HTML used and why</th>
+            <th>What remains without CSS</th>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>Helps the user recognize and select the workshop registration review action.</td>
+            <td>Native link styled as an action control.</td>
+            <td>The link is understandable and usable without CSS because its text describes the action.
+            </td>
+        </tr>
+        <tr>
+            <td>Selection/status</td>
+            <td>Lets the user choose whether or not they want to include a community workshop seat.</td>
+            <td>Native radio buttons with the associated labels.</td>
+            <td>The radio control and label text are stil understandable and usable without CSS.</td>
+        </tr>
+        <tr>
+            <td>Disclosure/confirmation</td>
+            <td>Let the user see their registration details and receive a confirmation message.</td>
+            <td>Native details and summary elements with a visible status message.</td>
+            <td>The disclosure can still be opened and the confirmation message is still readable without CSS.</td>
+        </tr>
+    </table>
+    <h2>2. State map</h2>
+    <table>
+        <tr>
+            <td>All three show in their normal resting state before any interaction.</td>
+            <td>This action has solid background and shadow. The radio choices are not selected, and the disclosure is
+                closed.</td>
+            <td>Meaning is communicated through visible text, native controls, borders, and labels instead of color
+                alone.</td>
+        </tr>
+        <tr>
+            <td>Default</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Hover</td>
+            <td>Action control</td>
+            <td>The action moves upward a little bit and its shadow increases, and brightness increases a bit too.</td>
+            <td>The text label and control shape still identify the action, so hover feedback is not depending on the color
+                alone.</td>
+        </tr>
+        <tr>
+            <td>Focus-visible</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Active</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Selected/checked</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Open and status/result</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+    </table>
+    <h2>3. Effects inventory</h2>
+    <table>
+        <tr>
+            <th>Technique and selector</th>
+            <th>Communication purpose</th>
+            <th>Legibility/fallback check</th>
+            <th>MDN source</th>
+        </tr>
+        <tr>
+            <td>Pseudo-element</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[URL]</td>
+        </tr>
+        <tr>
+            <td>Effect 1</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[URL]</td>
+        </tr>
+        <tr>
+            <td>Effect 2</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[URL]</td>
+        </tr>
+        <tr>
+            <td>Effect 3</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+            <td>[URL]</td>
+        </tr>
+    </table>
+    <h2>4. Motion and CSS explanation</h2>
+    <p><strong>Transition 1:</strong> [Selector, trigger, explicit properties, duration/easing, and purpose]</p>
+    <p><strong>Transition 2:</strong> [Selector, trigger, explicit properties, duration/easing, and purpose]</p>
+    <p><strong>Keyframe animation:</strong> [Name, waypoints, trigger, iteration count, and purpose]</p>
+    <p><strong>Why these properties:</strong> [Connect choices to layout/paint/composition.]</p>
+    <p><strong>Reduced-motion alternative:</strong> [What is removed/replaced and how feedback remains.]</p>
+    <h2>5. Test record</h2>
+    <table>
+        <tr>
+            <th>Condition</th>
+            <th>Observed evidence</th>
+            <th>Result and repair</th>
+        </tr>
+        <tr>
+            <td>Keyboard and focus</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Pointer and no hover-only information</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Reduced motion</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Narrow width and 200% zoom</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Effects/CSS unavailable</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+        <tr>
+            <td>Performance recording</td>
+            <td>[Response]</td>
+            <td>[Response]</td>
+        </tr>
+    </table>
+    <p><strong>Screenshot filenames and what each proves:</strong> [Response]</p>
+    <p><strong>Repair and retest summary:</strong> [Response]</p>
+    <h2>6. AI disclosure</h2>
+    <p><strong>Tool and purpose, or none:</strong> [Response]</p>
+    <p><strong>Prompt/task:</strong> [Response]</p>
+    <p><strong>Accepted, changed, or rejected output:</strong> [Response]</p>
+    <p><strong>How I verified it with sources and tests:</strong> [Response]</p>
+</body>
+
 </html>
