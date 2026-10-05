@@ -16,7 +16,7 @@ body { margin:0; color:var(--ink); background:var(--surface); font:1rem/1.5 Aria
 .study-header { padding-block:2rem 1rem; }
 .eyebrow, .specimen-number { color:var(--brand); font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
 .specimen-grid { display:grid; gap:var(--space); }
-.specimen { padding:1.25rem; background:var(--paper); border:1px solid #ccc; border-radius:.5rem; }
+.specimen { padding:1.25rem; background:linear-gradient(135deg, var(--paper) 0%, #fafafa 100%); border:1px solid #ccc; border-radius:.5rem; }
 .action {
   display:inline-block;
   padding:.75rem 1rem;
